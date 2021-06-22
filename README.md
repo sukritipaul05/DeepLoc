@@ -166,16 +166,16 @@ Note: Once you’re done with the training and testing, you may transfer files t
 ### AMI (Virtual Machine) & Instance Specs
 The DeepLoc task requires NVIDIA CUDA, cuDNN, TensorFlow, and a compatible version of PyTorch. The p2.8xlarge instance is a viable *instance type*.
 
-![](/Users/sukriti/Desktop/Githubreadme/instance_spec.png) *p2.8xlarge instance details*
+![](/images/instance_spec.png) *p2.8xlarge instance details*
 
 ### Snippets from the Training & Testing Phases
-![](/Users/sukriti/Desktop/Githubreadme/implement_1.png)<br/> *Fig. 1:  Data Description (Vocabulary)*
+![](/images/implement_1.png)<br/> *Fig. 1:  Data Description (Vocabulary)*
 
-![](/Users/sukriti/Desktop/Githubreadme/implement_2.png)<br/> *Fig. 2:   Train, Test & Validation Data set Creation from the Fasta file*
+![](/images/implement_2.png)<br/> *Fig. 2:   Train, Test & Validation Data set Creation from the Fasta file*
 
-![](/Users/sukriti/Desktop/Githubreadme/implement_3.png)<br/> *Fig. 3:   Training acc=64%, loss=0.96 (without optimal hyperparams)*
+![](/images/implement_3.png)<br/> *Fig. 3:   Training acc=64%, loss=0.96 (without optimal hyperparams)*
 
-![](/Users/sukriti/Desktop/Githubreadme/implement_4.png)<br/> *Fig. 4:   Test acc=66%, loss=0.98 (trained without optimal hyperparams)*
+![](/images/implement_4.png)<br/> *Fig. 4:   Test acc=66%, loss=0.98 (trained without optimal hyperparams)*
 
 ## References
 - DeepLoc Repo by Thanh Tung Hoang. [[Link]](https://github.com/ThanhTunggggg/DeepLoc)
