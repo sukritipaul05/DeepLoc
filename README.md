@@ -49,6 +49,6 @@ python evaluate.py --data_dir data --model_dir experiments/base_model
 ```
 
 ## References
-
+- https://github.com/ThanhTunggggg/DeepLoc
 - [CS230 Deep Learning](https://github.com/cs230-stanford/cs230-stanford.github.io)
 - [Paper](https://academic.oup.com/bioinformatics/article/33/21/3387/3931857)
