@@ -186,5 +186,4 @@ The DeepLoc task requires NVIDIA CUDA, cuDNN, TensorFlow, and a compatible versi
 - [CS230 Deep Learning](https://github.com/cs230-stanford/cs230-stanford.github.io)
 - Almagro Armenteros, José Juan, et al. "DeepLoc: prediction of protein subcellular localization using deep learning." Bioinformatics 33.21 (2017): 3387-3395. [[Link]](https://academic.oup.com/bioinformatics/article/33/21/3387/3931857)
 
-###### Any changes to the model architecture in this repository are attributed to NonExomics. 
-###### &copy;2021,NonExomics. Contact @sukritipaul05 if you encounter any other issues and while selecting your AWS EC2 instance.
+###### Any changes to the model architecture in this repository are attributed to NonExomics (&copy;2021,NonExomics). Contact @sukritipaul05 if you encounter any other issues and while selecting your AWS EC2 instance.
