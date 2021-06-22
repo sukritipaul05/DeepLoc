@@ -11,13 +11,9 @@ This document provides step-by-step instructions on (a) establishing a connectio
 We assume that your operating system is iOS, and that you have activated your AWS account.
 1. **AWS Support for extending the vCPU Limit to 32**<br/>New AWS accounts are assigned zero virtual CPUs (vCPU) by default. However, computationally intensive tasks use use instances requiring more than 16 units. For DeepLoc, we would require instances with 32+ vCPU units. <br/><br/>Go to your AWS [console](https://console.aws.amazon.com/support/home#/) and search for [Support](https://console.aws.amazon.com/support/home#/). Raise a token by creating a case and selecting Service limit increase. Fill in the following details to submit your request. The AWS team should approve your request and increase your vCPU limit within an hour.<br/><br/>![](/images/Docim_support.png)<br/><br/>You can enter a use-case based on your task. Here’s an example:  *“We're running computationally intensive enterprise-level DL models, for a subcellular localization task (business/research use-case).  The startup that I'm working at is called NonExomics. We'd be grateful if ya'll could approve of the vCPU limit so that we could use P2/P3 instances at the earliest”.*
 
-2. **Turn off Sleep Mode on your MAC**
+2. **Turn off Sleep Mode on your MAC**<br/> Go to *Energy Saver->Power Adapter*. Select the option *Prevent computer from sleeping automatically when the display is off*.
 
- Go to *Energy Saver->Power Adapter*. Select the option *Prevent computer from sleeping automatically when the display is off*.
-
-3. **Changes to SSH-related Configuration Files**
-
- We do this to ensure that the connection pipeline doesn't break (while you SSH to an Amazon EC2 instance). Two of the most common errors that you might encounter while training your model are, “Write failed: Broken pipeline” and "packet_write_wait: Connection to xx.xx.xx.xx: Broken pipe" [[Read More]](https://forums.aws.amazon.com/message.jspa?messageID=914326). We have a workaround! Open your terminal and edit the three configuration files as follows:
+3. **Changes to SSH-related Configuration Files**<br/> We do this to ensure that the connection pipeline doesn't break (while you SSH to an Amazon EC2 instance). Two of the most common errors that you might encounter while training your model are, “Write failed: Broken pipeline” and "packet_write_wait: Connection to xx.xx.xx.xx: Broken pipe" [[Read More]](https://forums.aws.amazon.com/message.jspa?messageID=914326). We have a workaround! Open your terminal and edit the three configuration files as follows:
 
 
 ### Client-side Configuration
