@@ -7,7 +7,7 @@ Find step-by-step instructions on (a) establishing a connection to an AWS EC2 in
 
 ## Prerequisites (One-time)
 We assume that your operating system is iOS, and that you have activated your AWS account.
-1. **AWS Support for extending the vCPU Limit to 32**<br/>New AWS accounts are assigned zero virtual CPUs (vCPU) by default. However, computationally intensive tasks use use instances requiring more than 16 units. For DeepLoc, we would require instances with 32+ vCPU units. <br/><br/>Go to your AWS [console](https://console.aws.amazon.com/support/home#/) and search for [Support](https://console.aws.amazon.com/support/home#/). Raise a token by creating a case and selecting Service limit increase. Fill in the following details to submit your request. The AWS team should approve your request and increase your vCPU limit within an hour.<br/><br/>![](/Users/sukriti/Desktop/Githubreadme/Docim_support.png)<br/><br/>You can enter a use-case based on your task. Here’s an example:  *“We're running computationally intensive enterprise-level DL models, for a subcellular localization task (business/research use-case).  The startup that I'm working at is called NonExomics. We'd be grateful if ya'll could approve of the vCPU limit so that we could use P2/P3 instances at the earliest”.*
+1. **AWS Support for extending the vCPU Limit to 32**<br/>New AWS accounts are assigned zero virtual CPUs (vCPU) by default. However, computationally intensive tasks use use instances requiring more than 16 units. For DeepLoc, we would require instances with 32+ vCPU units. <br/><br/>Go to your AWS [console](https://console.aws.amazon.com/support/home#/) and search for [Support](https://console.aws.amazon.com/support/home#/). Raise a token by creating a case and selecting Service limit increase. Fill in the following details to submit your request. The AWS team should approve your request and increase your vCPU limit within an hour.<br/><br/>![](/images/Docim_support.png)<br/><br/>You can enter a use-case based on your task. Here’s an example:  *“We're running computationally intensive enterprise-level DL models, for a subcellular localization task (business/research use-case).  The startup that I'm working at is called NonExomics. We'd be grateful if ya'll could approve of the vCPU limit so that we could use P2/P3 instances at the earliest”.*
 
 2. **Turn off Sleep Mode on your MAC**
 
@@ -166,7 +166,7 @@ Note: Once you’re done with the training and testing, you may transfer files t
 ### AMI (Virtual Machine) & Instance Specs
 The DeepLoc task requires NVIDIA CUDA, cuDNN, TensorFlow, and a compatible version of PyTorch. The p2.8xlarge instance is a viable *instance type*.
 
-![](/images/instance_spec.png) *p2.8xlarge instance details*
+![](/images/instance_spec.png)<br/> *p2.8xlarge instance details*
 
 ### Snippets from the Training & Testing Phases
 ![](/images/implement_1.png)<br/> *Fig. 1:  Data Description (Vocabulary)*
