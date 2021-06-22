@@ -3,7 +3,7 @@ DeepLoc, a Deep Learning approach for Protein Subcellular Localization.
 
 
 ### Introduction
-Find step-by-step instructions on (a) establishing a connection to an AWS EC2 instance from your terminal; (b)  transferring files from your local device to the VM; (c) setting up the environment to run DeepLoc. This document will also cover the prerequisites to ensure that your code runs smoothly.</br>
+Find step-by-step instructions on (a) establishing a connection to an AWS EC2 instance from your terminal; (b)  transferring files from your local device to the VM; (c) setting up the environment to run DeepLoc. This document will also cover the prerequisites to ensure that your code runs smoothly.</br></br>
 ![](/images/model_architecture1.png)</br> *Model Architecture [1].*
 
 
