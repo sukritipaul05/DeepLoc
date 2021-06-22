@@ -122,29 +122,29 @@ For this section, we follow the steps in [this](https://github.com/ThanhTunggggg
 ### Steps
 1. **Run the requirements.txt file.**
 ```shell
-pip install -r requirements.txt
+$pip install -r requirements.txt
 ```
 
 2. **Prepare the dataset** and build the vocabularies/parameters for the dataset.
 ```shell
-python build_dataset.py
-python build_vocab.py --data_dir data/
+$python build_dataset.py
+$python build_vocab.py --data_dir data/
 ```
 
 3. **Phase-1 Training** involves a simple train.
 ```shell
-python train.py --data_dir data --model_dir experiments/base_model
+$python train.py --data_dir data --model_dir experiments/base_model
 ```
 
 4. **Phase-2 Training**: To select optimal hyper-parameters (learning rate) and display them.
 ```shell
-python search_hyperparams.py --data_dir data --parent_dir experiments/learning_rate
-python synthesize_results.py --parent_dir experiments/learning_rate
+$python search_hyperparams.py --data_dir data --parent_dir experiments/learning_rate
+$python synthesize_results.py --parent_dir experiments/learning_rate
 ```
 
 5. **Test set evaluation.**
 ```shell
-python evaluate.py --data_dir data --model_dir experiments/base_model
+$python evaluate.py --data_dir data --model_dir experiments/base_model
 ```
 
 Note: Once you’re done with the training and testing, you may transfer files to your local device or backup on Github. The server hard disk memory is temporary (ephemeral drive) and your instance will be wiped clean when you terminate it.<b style='color:tomato'> Lastly, please terminate the instance on the AWS console as soon as you’ve completed the tasks to avoid unnecessary expenses!</b>
