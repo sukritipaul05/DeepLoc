@@ -17,7 +17,7 @@ We assume that your operating system is iOS, and that you have activated your AW
 
 
 ### Client-side Configuration
- Step 1:  Enter **$sudo nano /etc/ssh/ssh_config** on the terminal. <br/> Add and save the following lines under *Host **:
+ Step 1:  Enter **$sudo nano /etc/ssh/ssh_config** on the terminal. <br/> Add and save the following lines under Host *:
 
  ```shell
     ServerAliveInterval 120
@@ -36,7 +36,7 @@ We assume that your operating system is iOS, and that you have activated your AW
  ### Server-side Configuration
 
  Step 3: Enter **$ sudo nano  /etc/ssh/sshd_config** on the terminal.<br/>
- Add the following lines under *Host **:
+ Add the following lines under Host * :
  ```shell
     ClientAliveInterval 600
     ClientAliveCountMax 0
