@@ -1,10 +1,10 @@
 # Running DeepLoc on AWS
-DeepLoc, a Deep Learning approach for Protein Subcellular Localization.
+DeepLoc, a Deep Learning approach for Protein Subcellular Localization. 
 
 
-### Introduction
-Find step-by-step instructions on (a) establishing a connection to an AWS EC2 instance from your terminal; (b)  transferring files from your local device to the VM; (c) setting up the environment to run DeepLoc. This document will also cover the prerequisites to ensure that your code runs smoothly.</br></br>
-![](/images/model_architecture1.png)</br> *Model Architecture [1].*
+## Introduction
+This document provides step-by-step instructions on (a) establishing a connection to an AWS EC2 instance from your terminal; (b)  transferring files from your local device to the VM; (c) setting up the environment to run DeepLoc. It will also cover the prerequisites to ensure that your code runs smoothly.</br></br>
+
 
 
 ## Prerequisites (One-time)
@@ -119,6 +119,8 @@ $source activate pytorch_p36
 ```
 
 ## Running the Python Files in /DeepLoc
+
+![](/images/model_architecture1.png)</br> *Model Architecture image taken from Thanh Tung Hoang's repository [1]*</br></br>
 For this section, we follow the steps in [this](https://github.com/ThanhTunggggg/DeepLoc) README.md documentation. Navigate to the */DeepLoc* folder on the server, via your terminal. All the subsequent commands should be run from the */DeepLoc* directory.
 
 ### Steps
@@ -184,4 +186,5 @@ The DeepLoc task requires NVIDIA CUDA, cuDNN, TensorFlow, and a compatible versi
 - [CS230 Deep Learning](https://github.com/cs230-stanford/cs230-stanford.github.io)
 - Almagro Armenteros, José Juan, et al. "DeepLoc: prediction of protein subcellular localization using deep learning." Bioinformatics 33.21 (2017): 3387-3395. [[Link]](https://academic.oup.com/bioinformatics/article/33/21/3387/3931857)
 
-###### Contact @sukritipaul05 if you encounter any other issues and while selecting your AWS EC2 instance.
+###### Any changes to the model archietcture in this repository are attributed to &copy;
+. Contact @sukritipaul05 if you encounter any other issues and while selecting your AWS EC2 instance.
