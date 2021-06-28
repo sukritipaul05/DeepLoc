@@ -144,8 +144,12 @@ $python synthesize_results.py --parent_dir experiments/learning_rate
 
 5. **Test set evaluation.**
 ```shell
+#Existing DeepLoc test data 
 $python evaluate.py --data_dir data --model_dir experiments/base_model
+#Our test data
+$python evaluate_nonexomics.py --data_dir data --model_dir experiments/base_model
 ```
+
 
 Note: Once you’re done with the training and testing, you may transfer files to your local device or backup on Github. The server hard disk memory is temporary (ephemeral drive) and your instance will be wiped clean when you terminate it.<b style='color:tomato'> Lastly, please terminate the instance on the AWS console as soon as you’ve completed the tasks to avoid unnecessary expenses!</b>
 
